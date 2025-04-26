@@ -1,12 +1,14 @@
+import Link from "next/link";
+
 export function Header() {
     return(
-        <header>
+        <header className="bg-gray-900 text-white p-4 flex justify-between items-center h-14">
             <h1>Header</h1>
             <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/dashboard">Dashboard</a></li>
-                    <li><a href="/contacts">Contacts</a></li>
+                <ul className="flex space-x-4">
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/dashboard">Dashboard</Link></li>
+                    <li><Link href="/contacts">Contacts</Link></li>
                 </ul>
             </nav>
         </header>
